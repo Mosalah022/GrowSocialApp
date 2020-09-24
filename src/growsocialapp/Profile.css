@@ -1,0 +1,18 @@
+.menu-button > .arrow-button {
+    -fx-padding: 0;
+}
+
+.menu-button > .arrow-button > .arrow {
+    -fx-padding: 0;
+}
+
+.menu-item .label{
+    -fx-font-size: 14.0 pt;
+    -fx-text-fill: #5e5d62;
+    -fx-font-weight: bold;
+}
+.menu-item .label:hover{
+    -fx-font-size: 14.0 pt;
+    -fx-background: white ;
+    -fx-text-fill: white;
+}

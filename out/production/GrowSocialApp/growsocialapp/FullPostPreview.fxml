@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="360.0" style="-fx-background-color: transparent;" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="growsocialapp.FullPostPreviewController">
+   <children>
+      <HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" spacing="20.0" style="-fx-background-color: transparent;">
+         <children>
+            <StackPane prefHeight="323.0" prefWidth="50.0" style="-fx-background-color: transparent;" HBox.hgrow="NEVER">
+               <children>
+                  <ImageView fitHeight="95.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true" StackPane.alignment="CENTER">
+                     <image>
+                        <Image url="@1%20to%207%20Screen/left.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+               </children>
+            </StackPane>
+            <HBox style="-fx-background-color: white;" HBox.hgrow="ALWAYS">
+               <children>
+                  <StackPane>
+                     <children>
+                        <ImageView fitHeight="360.0" fitWidth="488.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@1%20to%207%20Screen/placeholder%20Slider.png" />
+                           </image>
+                        </ImageView>
+                        <HBox style="-fx-background-color: transparent;">
+                           <children>
+                              <StackPane prefHeight="350.0" prefWidth="80.0" style="-fx-background-color: transparent;">
+                                 <children>
+                                    <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@1%20to%207%20Screen/slide%20image%20icn%20left.png" />
+                                       </image>
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                    </ImageView>
+                                 </children>
+                              </StackPane>
+                              <StackPane prefHeight="150.0" prefWidth="200.0" style="-fx-background-color: transparent;" HBox.hgrow="ALWAYS" />
+                              <StackPane prefHeight="150.0" prefWidth="80.0" style="-fx-background-color: transparent;">
+                                 <children>
+                                    <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@1%20to%207%20Screen/slide%20image%20icn%20right.png" />
+                                       </image>
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                    </ImageView>
+                                 </children>
+                              </StackPane>
+                           </children>
+                        </HBox>
+                     </children>
+                  </StackPane>
+                  <StackPane>
+                     <children>
+                        <VBox>
+                           <children>
+                              <HBox prefWidth="200.0">
+                                 <children>
+                                    <StackPane alignment="TOP_CENTER" prefHeight="41.0" prefWidth="52.0">
+                                       <children>
+                                          <ImageView fitHeight="38.0" fitWidth="56.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@1%20to%207%20Screen/person.png" />
+                                             </image>
+                                          </ImageView>
+                                       </children>
+                                       <padding>
+                                          <Insets top="10.0" />
+                                       </padding>
+                                    </StackPane>
+                                    <VBox prefHeight="71.0" prefWidth="97.0">
+                                       <children>
+                                          <StackPane prefHeight="28.0" prefWidth="103.0">
+                                             <children>
+                                                <Label alignment="BOTTOM_LEFT" prefHeight="28.0" prefWidth="106.0" text="Username">
+                                                   <font>
+                                                      <Font name="System Bold" size="14.0" />
+                                                   </font>
+                                                </Label>
+                                             </children>
+                                          </StackPane>
+                                          <StackPane layoutX="10.0" layoutY="10.0" prefHeight="14.0" prefWidth="95.0">
+                                             <children>
+                                                <Label prefHeight="17.0" prefWidth="105.0" text="Location" />
+                                             </children>
+                                          </StackPane>
+                                       </children>
+                                    </VBox>
+                                    <StackPane prefHeight="38.0" prefWidth="60.0">
+                                       <children>
+                                          <MenuButton fx:id="menuButton" mnemonicParsing="false" prefHeight="15.0" prefWidth="7.0" style="-fx-background-color: transparent; -fx-padding: 0; -fx-cursor: hand; " stylesheets="@Profile.css">
+                                            <items>
+                                              <MenuItem mnemonicParsing="false" text="Show on Instagram" />
+                                              <MenuItem mnemonicParsing="false" text="Copy link" />
+                                                <MenuItem mnemonicParsing="false" text="Copy Caption" />
+                                                <MenuItem mnemonicParsing="false" text="Save Thumbnail As.." />
+                                            </items>
+                                             <cursor>
+                                                <Cursor fx:constant="HAND" />
+                                             </cursor>
+                                             <graphic>
+                                                <ImageView fitHeight="9.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@1%20to%207%20Screen/menu.png" />
+                                                   </image>
+                                                </ImageView>
+                                             </graphic>
+                                          </MenuButton>
+                                       </children>
+                                    </StackPane>
+                                 </children>
+                                 <padding>
+                                    <Insets bottom="5.0" />
+                                 </padding>
+                              </HBox>
+                              <ScrollPane hbarPolicy="NEVER" prefHeight="120.0" prefWidth="200.0" style="-fx-background-color: white;">
+                                 <content>
+                                    <VBox style="-fx-background-color: #FFFFFF;">
+                                       <children>
+                                          <HBox prefHeight="44.0" prefWidth="200.0" spacing="5.0" style="-fx-background-color: #FFFFFF;">
+                                             <children>
+                                                <StackPane alignment="TOP_CENTER" prefHeight="0.0" prefWidth="21.0">
+                                                   <children>
+                                                      <ImageView fitHeight="40.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true">
+                                                         <image>
+                                                            <Image url="@1%20to%207%20Screen/person.png" />
+                                                         </image>
+                                                      </ImageView>
+                                                   </children>
+                                                </StackPane>
+                                                <VBox prefHeight="44.0" prefWidth="171.0">
+                                                   <children>
+                                                      <StackPane prefHeight="30.0" prefWidth="164.0">
+                                                         <children>
+                                                               <Label prefHeight="17.0" prefWidth="199.0" text="Username">
+                                                               <font>
+                                                                  <Font name="System Bold" size="12.0" />
+                                                               </font>
+                                                            </Label>
+                                                         </children>
+                                                         <VBox.margin>
+                                                            <Insets />
+                                                         </VBox.margin>
+                                                      </StackPane>
+                                                      <StackPane layoutX="10.0" layoutY="10.0" prefHeight="150.0" prefWidth="200.0">
+                                                         <children>
+                                                            <Label prefHeight="17.0" prefWidth="198.0" text="Comment" />
+                                                         </children>
+                                                      </StackPane>
+                                                      <HBox prefHeight="100.0" prefWidth="200.0">
+                                                         <children>
+                                                            <StackPane prefHeight="17.0" prefWidth="57.0">
+                                                               <children>
+                                                                  <Label prefHeight="17.0" prefWidth="116.0" text="Date" textFill="#a8a8a8">
+                                                                     <font>
+                                                                        <Font name="System Bold" size="12.0" />
+                                                                     </font>
+                                                                  </Label>
+                                                               </children>
+                                                            </StackPane>
+                                                            <StackPane layoutX="10.0" layoutY="10.0" prefHeight="17.0" prefWidth="47.0">
+                                                               <children>
+                                                                  <Label prefHeight="17.0" prefWidth="192.0" text="Reply" textFill="#a8a8a8">
+                                                                     <font>
+                                                                        <Font name="System Bold" size="12.0" />
+                                                                     </font>
+                                                                     <cursor>
+                                                                        <Cursor fx:constant="HAND" />
+                                                                     </cursor>
+                                                                  </Label>
+                                                               </children>
+                                                            </StackPane>
+                                                         </children>
+                                                      </HBox>
+                                                   </children>
+                                                </VBox>
+                                             </children>
+                                          </HBox>
+                                       </children>
+                                    </VBox>
+                                 </content>
+                                 <VBox.margin>
+                                    <Insets bottom="5.0" left="15.0" right="5.0" top="5.0" />
+                                 </VBox.margin>
+                              </ScrollPane>
+                              <VBox prefWidth="202.0">
+                                 <children>
+                                    <HBox alignment="TOP_CENTER" prefWidth="200.0" spacing="10.0">
+                                       <children>
+                                          <StackPane prefHeight="27.0" prefWidth="0.0">
+                                             <children>
+                                                <ImageView fitHeight="57.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@1%20to%207%20Screen/redheart.png" />
+                                                   </image>
+                                                   <cursor>
+                                                      <Cursor fx:constant="HAND" />
+                                                   </cursor>
+                                                </ImageView>
+                                             </children>
+                                          </StackPane>
+                                          <StackPane layoutX="10.0" layoutY="10.0" prefHeight="27.0" prefWidth="11.0">
+                                             <children>
+                                                <ImageView fitHeight="57.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@1%20to%207%20Screen/comment.png" />
+                                                   </image>
+                                                   <cursor>
+                                                      <Cursor fx:constant="HAND" />
+                                                   </cursor>
+                                                </ImageView>
+                                             </children>
+                                          </StackPane>
+                                          <StackPane layoutX="111.0" layoutY="10.0" prefHeight="27.0" prefWidth="18.0">
+                                             <children>
+                                                <ImageView fitHeight="27.0" fitWidth="66.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@1%20to%207%20Screen/upload.png" />
+                                                   </image>
+                                                   <cursor>
+                                                      <Cursor fx:constant="HAND" />
+                                                   </cursor>
+                                                </ImageView>
+                                             </children>
+                                          </StackPane>
+                                          <StackPane layoutX="94.0" layoutY="20.0" prefHeight="27.0" prefWidth="48.0" />
+                                          <StackPane layoutX="131.0" layoutY="20.0" prefHeight="27.0" prefWidth="18.0">
+                                             <children>
+                                                <ImageView fitHeight="57.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@1%20to%207%20Screen/restore.png" />
+                                                   </image>
+                                                   <cursor>
+                                                      <Cursor fx:constant="HAND" />
+                                                   </cursor>
+                                                </ImageView>
+                                             </children>
+                                          </StackPane>
+                                       </children>
+                                       <padding>
+                                          <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                       </padding>
+                                    </HBox>
+                                    <StackPane prefWidth="200.0">
+                                       <children>
+                                          <Label prefWidth="200.0" text="0 likes">
+                                             <font>
+                                                <Font name="System Bold" size="12.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                       <padding>
+                                          <Insets bottom="10.0" left="10.0" right="10.0" />
+                                       </padding>
+                                    </StackPane>
+                                    <StackPane prefWidth="200.0">
+                                       <children>
+                                          <Label prefWidth="215.0" text="Date" textFill="#b5b5b5">
+                                             <font>
+                                                <Font name="System Bold" size="12.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                       <VBox.margin>
+                                          <Insets left="10.0" />
+                                       </VBox.margin>
+                                    </StackPane>
+                                 </children>
+                              </VBox>
+                              <HBox prefWidth="200.0">
+                                 <children>
+                                    <TextField prefHeight="50.0" prefWidth="149.0" promptText="Add a comment..." style="-fx-background-color: white;">
+                                       <cursor>
+                                          <Cursor fx:constant="TEXT" />
+                                       </cursor>
+                                       <font>
+                                          <Font name="System Bold" size="11.0" />
+                                       </font>
+                                    </TextField>
+                                    <Button mnemonicParsing="false" prefHeight="51.0" prefWidth="52.0" style="-fx-background-color: white;" text="Post" textFill="#cbe5fc">
+                                       <font>
+                                          <Font name="System Bold" size="12.0" />
+                                       </font>
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                    </Button>
+                                 </children>
+                              </HBox>
+                           </children>
+                           <padding>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </padding>
+                        </VBox>
+                     </children>
+                  </StackPane>
+               </children>
+            </HBox>
+            <StackPane style="-fx-background-color: transparent;" HBox.hgrow="NEVER">
+               <children>
+                  <ImageView fitHeight="95.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true" StackPane.alignment="CENTER">
+                     <image>
+                        <Image url="@1%20to%207%20Screen/Right.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+               </children>
+            </StackPane>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>
