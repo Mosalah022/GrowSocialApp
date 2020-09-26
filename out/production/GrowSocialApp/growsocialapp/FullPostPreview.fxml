@@ -1,13 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.geometry.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.image.*?>
-<?import javafx.scene.layout.*?>
-<?import javafx.scene.text.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="360.0" style="-fx-background-color: transparent;" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="growsocialapp.FullPostPreviewController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="360.0" style="-fx-background-color: transparent;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="growsocialapp.FullPostPreviewController">
    <children>
       <HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" spacing="20.0" style="-fx-background-color: transparent;">
          <children>
@@ -107,6 +116,7 @@
                                               <MenuItem mnemonicParsing="false" text="Copy link" />
                                                 <MenuItem mnemonicParsing="false" text="Copy Caption" />
                                                 <MenuItem mnemonicParsing="false" text="Save Thumbnail As.." />
+                                                <MenuItem mnemonicParsing="false" text="Delete " />
                                             </items>
                                              <cursor>
                                                 <Cursor fx:constant="HAND" />
@@ -282,7 +292,7 @@
                               </VBox>
                               <HBox prefWidth="200.0">
                                  <children>
-                                    <TextField prefHeight="50.0" prefWidth="149.0" promptText="Add a comment..." style="-fx-background-color: white;">
+                                    <TextField prefHeight="50.0" prefWidth="118.0" promptText="Add a comment..." style="-fx-background-color: white;">
                                        <cursor>
                                           <Cursor fx:constant="TEXT" />
                                        </cursor>
@@ -290,7 +300,15 @@
                                           <Font name="System Bold" size="11.0" />
                                        </font>
                                     </TextField>
-                                    <Button mnemonicParsing="false" prefHeight="51.0" prefWidth="52.0" style="-fx-background-color: white;" text="Post" textFill="#cbe5fc">
+                                    <ImageView fitHeight="22.0" fitWidth="16.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@1%20to%207%20Screen/emoji2.png" />
+                                       </image>
+                                       <HBox.margin>
+                                          <Insets left="17.0" top="17.0" />
+                                       </HBox.margin>
+                                    </ImageView>
+                                    <Button mnemonicParsing="false" prefHeight="51.0" prefWidth="59.0" style="-fx-background-color: white;" text="Post" textFill="#cbe5fc">
                                        <font>
                                           <Font name="System Bold" size="12.0" />
                                        </font>

@@ -7,19 +7,10 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" name="lib" level="project" />
-    <orderEntry type="module-library" exported="">
-      <library>
-        <CLASSES>
-          <root url="file://$MODULE_DIR$/../../javafx-sdk-11.0.2/lib" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES>
-          <root url="file://$MODULE_DIR$/../../javafx-sdk-11.0.2/lib" />
-        </SOURCES>
-        <jarDirectory url="file://$MODULE_DIR$/../../javafx-sdk-11.0.2/lib" recursive="false" />
-        <jarDirectory url="file://$MODULE_DIR$/../../javafx-sdk-11.0.2/lib" recursive="false" type="SOURCES" />
-      </library>
-    </orderEntry>
+    <orderEntry type="library" exported="" name="controlsfx-8.40.131" level="project" />
+    <orderEntry type="library" exported="" name="controlsfx-8.40.132" level="project" />
+    <orderEntry type="library" exported="" name="controlsfx-8.40.13" level="project" />
+    <orderEntry type="library" exported="" name="GrowSocialApp" level="project" />
+    <orderEntry type="library" exported="" name="lib" level="project" />
   </component>
 </module>
