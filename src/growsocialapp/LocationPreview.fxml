@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="360.0" style="-fx-background-color: transparent;" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="growsocialapp.LocationPreview">
+    <children>
+          <HBox style="-fx-background-color: white;">
+              <children>
+                  <StackPane>
+                      <children>
+                          <ImageView fitHeight="360.0" fitWidth="488.0" pickOnBounds="true" preserveRatio="true">
+                              <image>
+                                  <Image url="@1%20to%207%20Screen/map.png" />
+                              </image>
+                          </ImageView>
+                      </children>
+                  </StackPane>
+                  <StackPane>
+                      <children>
+                          <VBox spacing="5.0">
+                              <children>
+                                  <HBox alignment="TOP_RIGHT" prefWidth="200.0">
+                                      <children>
+                                          <Button mnemonicParsing="false" style="-fx-background-color: white;" text="X" textFill="#f58484">
+                                              <font>
+                                                  <Font name="Segoe MDL2 Assets" size="25.0" />
+                                              </font>
+                                              <cursor>
+                                                  <Cursor fx:constant="HAND" />
+                                              </cursor>
+                                          </Button>
+                                      </children>
+                                  </HBox>
+                        <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="17.0" prefWidth="197.0" text="Your Location">
+                           <font>
+                              <Font name="System Bold" size="23.0" />
+                           </font>
+                        </Label>
+                        <StackPane prefHeight="89.0" prefWidth="200.0">
+                           <children>
+                              <Label prefHeight="86.0" prefWidth="168.0" text="Select the location of current interest and the application will suggest the places closest to this location first" wrapText="true" />
+                           </children>
+                        </StackPane>
+                        <StackPane layoutX="15.0" layoutY="103.0" prefHeight="89.0" prefWidth="200.0">
+                           <children>
+                              <Label prefHeight="86.0" prefWidth="168.0" text="The choice only affects the relevance of the suggested locations, the ability to search for remote places remains available" wrapText="true" />
+                           </children>
+                        </StackPane>
+                        <StackPane>
+                           <children>
+                              <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" style="-fx-background-color: #FFFFFF; -fx-effect: dropshadow(Gaussian, grey, 5, 0.1, 0 , 1);" text="Cancel" />
+                           </children>
+                        </StackPane>
+                        <StackPane>
+                           <children>
+                              <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" style="-fx-background-color: #7D52B6;" text="Save" textFill="WHITE" />
+                           </children>
+                        </StackPane>
+                              </children>
+                              <padding>
+                                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                              </padding>
+                          </VBox>
+                      </children>
+                  </StackPane>
+              </children>
+          </HBox>
+    </children>
+</AnchorPane>
