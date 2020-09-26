@@ -14,6 +14,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.input.MouseEvent;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
 
@@ -60,7 +61,22 @@ public class GrowSocialApp extends Application {
         stage.setScene(scene);
         stage.show();
     }
+    
+public void changeScreenn(MouseEvent actionEvent, String FXML) throws IOException {
+        Parent parent = FXMLLoader.load(getClass().getResource(FXML));
 
+        Scene scene = new Scene(parent);
+        Stage stage;
+
+        stage = (Stage) ((Node) actionEvent.getSource()).getScene().getWindow();
+
+        if (!FXML.equals("Login.fxml") && !FXML.equals("Proxy.fxml")) {
+            stage.setResizable(true);
+        }
+
+        stage.setScene(scene);
+        stage.show();
+    }
     /**
      * @param args the command line arguments
      */

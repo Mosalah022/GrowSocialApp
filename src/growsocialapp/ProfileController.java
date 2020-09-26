@@ -8,14 +8,11 @@ package growsocialapp;
 import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
-import javafx.event.ActionEvent;
-
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.geometry.Pos;
 import javafx.scene.control.Label;
-import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
@@ -79,6 +76,26 @@ public class ProfileController  extends GrowSocialApp implements Initializable {
     }
 }
     
+         public void Postbtn(MouseEvent event) throws Exception {               
+    try {
+       
+        changeScreenn(event, "Scheduler.fxml");
+             
+    } catch(Exception e) {
+        e.printStackTrace();
+        }
+    }
+         
+         public void Photobtn(MouseEvent event) throws Exception {               
+    try {
+       
+        changeScreenn(event, "NewPost.fxml");
+             
+    } catch(Exception e) {
+        e.printStackTrace();
+        }
+    }
+        
     public static class Post{
         ImageView mainImage;
 
