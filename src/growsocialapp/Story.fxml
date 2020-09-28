@@ -207,7 +207,7 @@
                               <Cursor fx:constant="HAND" />
                            </cursor>
                         </ImageView>
-                        <Label text="New Publication" translateX="-200.0">
+                        <Label text="New Story" translateX="-200.0">
                            <font>
                               <Font name="System Bold" size="23.0" />
                            </font>
