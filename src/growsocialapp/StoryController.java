@@ -64,7 +64,7 @@ public class StoryController extends GrowSocialApp implements Initializable {
     public void Profilebtn(MouseEvent event) throws Exception {               
     try {
        
-        changeScreenn(event, "Profile.fxml");
+        changeScreen(event, "Profile.fxml");
              
     } catch(Exception e) {
         e.printStackTrace();
@@ -74,7 +74,7 @@ public class StoryController extends GrowSocialApp implements Initializable {
     public void Postbtn(MouseEvent event) throws Exception {               
     try {
        
-        changeScreenn(event, "Scheduler.fxml");
+        changeScreen(event, "Scheduler.fxml");
              
     } catch(Exception e) {
         e.printStackTrace();
@@ -84,7 +84,7 @@ public class StoryController extends GrowSocialApp implements Initializable {
      public void Photobtn(MouseEvent event) throws Exception {               
     try {
        
-        changeScreenn(event, "NewPost.fxml");
+        changeScreen(event, "NewPost.fxml");
              
     } catch(Exception e) {
         e.printStackTrace();
@@ -94,7 +94,7 @@ public class StoryController extends GrowSocialApp implements Initializable {
        public void Repostbtn(MouseEvent event) throws Exception {               
     try {
        
-        changeScreenn(event, "Repost.fxml");
+        changeScreen(event, "Repost.fxml");
              
     } catch(Exception e) {
         e.printStackTrace();

@@ -62,7 +62,7 @@ public class GrowSocialApp extends Application {
         stage.show();
     }
     
-public void changeScreenn(MouseEvent actionEvent, String FXML) throws IOException {
+public void changeScreen(MouseEvent actionEvent, String FXML) throws IOException {
         Parent parent = FXMLLoader.load(getClass().getResource(FXML));
 
         Scene scene = new Scene(parent);

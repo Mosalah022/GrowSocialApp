@@ -336,7 +336,7 @@
                         <TextField layoutX="14.0" layoutY="432.0" prefHeight="34.0" prefWidth="278.0" promptText="Add Location " />
                         <StackPane layoutX="292.0" layoutY="431.0" prefHeight="35.0" prefWidth="47.0">
                            <children>
-                              <ImageView fitHeight="28.0" fitWidth="33.0" pickOnBounds="true" preserveRatio="true">
+                              <ImageView fitHeight="28.0" fitWidth="33.0" onMouseClicked="#placeButton" pickOnBounds="true" preserveRatio="true">
                                  <image>
                                     <Image url="@1%20to%207%20Screen/download-removebg-preview.png" />
                                  </image>

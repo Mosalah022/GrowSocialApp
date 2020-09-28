@@ -79,7 +79,7 @@ public class ProfileController  extends GrowSocialApp implements Initializable {
          public void Postbtn(MouseEvent event) throws Exception {               
     try {
        
-        changeScreenn(event, "Scheduler.fxml");
+        changeScreen(event, "Scheduler.fxml");
              
     } catch(Exception e) {
         e.printStackTrace();
@@ -89,7 +89,7 @@ public class ProfileController  extends GrowSocialApp implements Initializable {
          public void Photobtn(MouseEvent event) throws Exception {               
     try {
        
-        changeScreenn(event, "NewPost.fxml");
+        changeScreen(event, "NewPost.fxml");
              
     } catch(Exception e) {
         e.printStackTrace();
