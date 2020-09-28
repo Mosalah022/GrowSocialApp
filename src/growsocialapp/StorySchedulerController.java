@@ -9,7 +9,6 @@ import java.io.IOException;
 import java.net.URL;
 import java.util.Random;
 import java.util.ResourceBundle;
-
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
@@ -18,14 +17,18 @@ import javafx.scene.control.Label;
 import javafx.scene.control.ScrollPane;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
-import javafx.scene.layout.*;
+import javafx.scene.layout.AnchorPane;
+import javafx.scene.layout.BorderPane;
+import javafx.scene.layout.HBox;
+import javafx.scene.layout.StackPane;
+import javafx.scene.layout.VBox;
 
 /**
  * FXML Controller class
  *
  * @author DELL
  */
-public class SchedulerController extends GrowSocialApp implements Initializable {
+public class StorySchedulerController extends GrowSocialApp implements Initializable {
     @FXML
     private AnchorPane mainPane;
     @FXML
@@ -37,20 +40,21 @@ public class SchedulerController extends GrowSocialApp implements Initializable 
     @FXML
     private Label profileLabel;
     @FXML
-    private VBox contentVBox;
-
-    @FXML
     private Button newPostButton;
     @FXML
-    private Button xButton;
+    private Button previewButton;
+    @FXML
+    private Button editButton;
     @FXML
     private Button deleteButton;
     @FXML
     private Button undeleteButton;
     @FXML
-    private Button editButton;
+    private Button xButton;
     @FXML
-    private Button previewButton;
+    private VBox contentVBox;
+
+   
 
     /**
      * Initializes the controller class.
@@ -67,7 +71,7 @@ public class SchedulerController extends GrowSocialApp implements Initializable 
 
 
         Random random = new Random();
-        for (int i = 0; i < 50; i++) {
+        for (int i = 0; i < 10; i++) {
             int roll = random.nextInt(3) + 1;
             try {
                 StackPane row = FXMLLoader.load(getClass().getResource("DateRow.fxml"));
@@ -114,25 +118,25 @@ public class SchedulerController extends GrowSocialApp implements Initializable 
             e.printStackTrace();
         }
     }
-
-     public void Storybtn(MouseEvent event) throws Exception {               
+    
+     public void Postbtn(MouseEvent event) throws Exception {               
     try {
        
-        changeScreen(event, "StoryScheduler.fxml");
+        changeScreen(event, "Scheduler.fxml");
              
     } catch(Exception e) {
         e.printStackTrace();
         }
     }
-    public void Photobtn(MouseEvent event) throws Exception {
+
+    public void stbtn(MouseEvent event) throws Exception {
         try {
 
-            changeScreen(event, "NewPost.fxml");
+            changeScreen(event, "Story.fxml");
 
         } catch (Exception e) {
             e.printStackTrace();
         }
     }
-
 
 }

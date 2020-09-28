@@ -86,6 +86,16 @@ public class ProfileController  extends GrowSocialApp implements Initializable {
         }
     }
          
+         public void Storybtn(MouseEvent event) throws Exception {               
+    try {
+       
+        changeScreen(event, "StoryScheduler.fxml");
+             
+    } catch(Exception e) {
+        e.printStackTrace();
+        }
+    }
+         
          public void Photobtn(MouseEvent event) throws Exception {               
     try {
        

@@ -53,10 +53,13 @@
                               </StackPane>
                               <StackPane layoutX="10.0" layoutY="73.0" prefHeight="29.0" prefWidth="83.0" style="-fx-cursor: hand;">
                                  <children>
-                                    <ImageView fitHeight="29.0" fitWidth="25.0" onMouseClicked="#Postbtn" pickOnBounds="true" preserveRatio="true" style="-fx-cursor: hand;">
+                                    <ImageView fitHeight="29.0" fitWidth="25.0" onMouseClicked="#Storybtn" pickOnBounds="true" preserveRatio="true" style="-fx-cursor: hand;">
                                        <image>
                                           <Image url="@1%20to%207%20Screen/stories.png" />
                                        </image>
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
                                     </ImageView>
                                  </children>
                                  <padding>
@@ -128,10 +131,13 @@
                                     <Font size="18.0" />
                                  </font>
                               </Label>
-                              <Label contentDisplay="CENTER" onMouseClicked="#Postbtn" prefHeight="36.0" prefWidth="154.0" style="-fx-cursor: hand;" text="Stories" textFill="#5e5d62">
+                              <Label contentDisplay="CENTER" onMouseClicked="#Storybtn" prefHeight="36.0" prefWidth="154.0" style="-fx-cursor: hand;" text="Stories" textFill="#5e5d62">
                                  <font>
                                     <Font size="18.0" />
                                  </font>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
                               </Label>
                               <Label contentDisplay="CENTER" prefHeight="36.0" prefWidth="154.0" style="-fx-cursor: hand;" text="Search" textFill="#5e5d62">
                                  <font>

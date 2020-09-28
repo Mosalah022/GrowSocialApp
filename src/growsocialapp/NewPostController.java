@@ -128,8 +128,18 @@ public class NewPostController extends GrowSocialApp implements Initializable {
             e.printStackTrace();
         }
     }
+    
+     public void Storybtn(MouseEvent event) throws Exception {               
+    try {
+       
+        changeScreen(event, "StoryScheduler.fxml");
+             
+    } catch(Exception e) {
+        e.printStackTrace();
+        }
+    }
 
-    public void Storybtn(MouseEvent event) throws Exception {
+    public void Stbtn(MouseEvent event) throws Exception {
         try {
 
             changeScreen(event, "Story.fxml");

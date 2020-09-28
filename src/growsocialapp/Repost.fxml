@@ -57,7 +57,7 @@
                               </StackPane>
                               <StackPane layoutX="10.0" layoutY="73.0" prefHeight="29.0" prefWidth="83.0" style="-fx-cursor: hand;">
                                  <children>
-                                    <ImageView fitHeight="29.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true" style="-fx-cursor: hand;">
+                                    <ImageView fitHeight="29.0" fitWidth="25.0" onMouseClicked="#Storybtn" pickOnBounds="true" preserveRatio="true" style="-fx-cursor: hand;">
                                        <image>
                                           <Image url="@1%20to%207%20Screen/stories.png" />
                                        </image>
@@ -132,7 +132,7 @@
                                     <Font size="18.0" />
                                  </font>
                               </Label>
-                              <Label contentDisplay="CENTER" prefHeight="36.0" prefWidth="154.0" style="-fx-cursor: hand;" text="Stories" textFill="#5e5d62">
+                              <Label contentDisplay="CENTER" onMouseClicked="#Storybtn" prefHeight="36.0" prefWidth="154.0" style="-fx-cursor: hand;" text="Stories" textFill="#5e5d62">
                                  <font>
                                     <Font size="18.0" />
                                  </font>
@@ -229,7 +229,7 @@
                                     <Cursor fx:constant="HAND" />
                                  </cursor>
                               </Label>
-                              <Label alignment="BOTTOM_LEFT" onMouseClicked="#Storybtn" text="Story" textFill="#5e5d62">
+                              <Label alignment="BOTTOM_LEFT" onMouseClicked="#Stbtn" text="Story" textFill="#5e5d62">
                                  <font>
                                     <Font name="System Bold" size="12.0" />
                                  </font>
@@ -254,9 +254,9 @@
                   </HBox>
                   <StackPane>
                      <children>
-                        <ImageView fitHeight="29.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true" style="-fx-cursor: hand;">
+                        <ImageView fitHeight="25.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true" style="-fx-cursor: hand;" translateX="-10.0" translateY="-8.0">
                            <image>
-                              <Image url="@1%20to%207%20Screen/filter.png" />
+                              <Image url="@1%20to%207%20Screen/loc..png" />
                            </image>
                         </ImageView>
                      </children>
@@ -266,10 +266,13 @@
                   </StackPane>
                   <StackPane layoutX="784.0" layoutY="10.0">
                      <children>
-                        <ImageView fitHeight="29.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fitHeight="25.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true" translateY="-10.0">
                            <image>
-                              <Image url="@1%20to%207%20Screen/bell.png" />
+                              <Image url="@1%20to%207%20Screen/close.png" />
                            </image>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
                         </ImageView>
                      </children>
                      <padding>
@@ -331,7 +334,7 @@
                               </ImageView>
                               <ImageView fitHeight="19.0" fitWidth="21.0" pickOnBounds="true" preserveRatio="true" translateX="30.0" translateY="5.0">
                                  <image>
-                                    <Image url="@1%20to%207%20Screen/emoji2.png" />
+                                    <Image url="@1%20to%207%20Screen/Layer%200.png" />
                                  </image>
                               </ImageView>
                               <Label text="0/2200" translateX="45.0" />
@@ -382,24 +385,35 @@
                         </AnchorPane>
                         <Separator layoutX="479.0" orientation="VERTICAL" prefHeight="700.0" />
                         <DatePicker layoutX="14.0" layoutY="545.0" prefHeight="26.0" prefWidth="130.0" />
-                        <ImageView fitHeight="28.0" fitWidth="33.0" layoutX="302.0" layoutY="491.0" pickOnBounds="true" preserveRatio="true">
-                           <image>
-                              <Image url="@1%20to%207%20Screen/download-removebg-preview.png" />
-                           </image>
-                           <cursor>
-                              <Cursor fx:constant="HAND" />
-                           </cursor>
-                        </ImageView>
                         <AnchorPane layoutX="14.0" layoutY="34.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="39.0" prefWidth="447.0" style="-fx-border-color: #D1D1D1; -fx-background-color: #FFF;">
                            <children>
-                              <ImageView fitHeight="31.0" fitWidth="37.0" layoutX="14.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
-                                 <image>
-                                    <Image url="@1%20to%207%20Screen/61-512.png" />
-                                 </image>
-                              </ImageView>
+                              <StackPane layoutX="10.0" prefHeight="39.0" prefWidth="34.0">
+                                 <children>
+                                    <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@1%20to%207%20Screen/Repost.png" />
+                                       </image>
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                    </ImageView>
+                                 </children>
+                              </StackPane>
                               <TextField layoutX="45.0" layoutY="2.0" prefHeight="34.0" prefWidth="399.0" promptText="Link To Post" style="-fx-background-color: transparents;" />
                            </children>
                         </AnchorPane>
+                        <StackPane layoutX="294.0" layoutY="489.0" prefHeight="33.0" prefWidth="42.0" style="-fx-background-color: #fff;">
+                           <children>
+                              <ImageView fitHeight="25.0" fitWidth="39.0" onMouseClicked="#placeButton" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@1%20to%207%20Screen/map.loc.png" />
+                                 </image>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </ImageView>
+                           </children>
+                        </StackPane>
                      </children>
                   </AnchorPane>
                </children>
