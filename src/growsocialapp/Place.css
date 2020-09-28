@@ -48,3 +48,25 @@
     -fx-alignment: top-center;
     -fx-text-fill: #4949DF;
 }
+
+.check-box .box {
+
+    -fx-background-color: white;
+    -fx-border-color:grey;
+    -fx-border-radius:20px;
+
+}
+
+.check-box:selected .mark {
+
+    -fx-background-color: white;
+
+}
+
+.check-box:selected .box {
+
+    -fx-background-color: #4949DF;
+    -fx-border-radius:20px;
+    -fx-background-radius:20px;
+
+}
