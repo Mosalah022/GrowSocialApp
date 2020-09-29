@@ -26,13 +26,20 @@
                               <children>
                                   <HBox alignment="TOP_RIGHT" prefWidth="200.0">
                                       <children>
-                                          <Button mnemonicParsing="false" style="-fx-background-color: white;" text="X" textFill="#f58484">
+                                          <Button mnemonicParsing="false" style="-fx-background-color: white;" textFill="#f58484">
                                               <font>
                                                   <Font name="Segoe MDL2 Assets" size="25.0" />
                                               </font>
                                               <cursor>
                                                   <Cursor fx:constant="HAND" />
                                               </cursor>
+                                 <graphic>
+                                    <ImageView fitHeight="33.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@1%20to%207%20Screen/close_1.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
                                           </Button>
                                       </children>
                                   </HBox>
