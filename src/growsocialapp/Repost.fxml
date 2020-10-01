@@ -357,7 +357,7 @@
                               <Cursor fx:constant="HAND" />
                            </cursor>
                         </Button>
-                        <Button fx:id="Cancle" layoutX="44.0" layoutY="609.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="150.0" style="-fx-background-color: #FFF; -fx-border-radius: 5PX;" text="Cancle">
+                        <Button fx:id="Cancle" layoutX="44.0" layoutY="609.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="150.0" style="-fx-background-color: #FFF; -fx-border-radius: 5PX;" text="Cancel">
                            <font>
                               <Font size="14.0" />
                            </font>

@@ -349,7 +349,7 @@
                               <Font name="System Bold" size="17.0" />
                            </font>
                         </Button>
-                        <Button fx:id="undeleteButton" layoutX="435.0" layoutY="20.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="98.0" style="-fx-background-radius: 20; -fx-cursor: hand; -fx-background-color: #FFFFFF; -fx-effect: dropshadow(Gaussian, grey, 5, 0.1, 0 , 1);" text="Undelect" textFill="#787878" translateX="-270.0">
+                        <Button fx:id="undeleteButton" layoutX="435.0" layoutY="20.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="98.0" style="-fx-background-radius: 20; -fx-cursor: hand; -fx-background-color: #FFFFFF; -fx-effect: dropshadow(Gaussian, grey, 5, 0.1, 0 , 1);" text="UnSelect" textFill="#787878" translateX="-270.0">
                            <font>
                               <Font name="System Bold" size="17.0" />
                            </font>
