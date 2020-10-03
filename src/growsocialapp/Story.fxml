@@ -319,14 +319,9 @@
                   <AnchorPane prefHeight="200.0" prefWidth="200.0">
                      <children>
                         <TextField layoutX="14.0" layoutY="274.0" prefHeight="34.0" prefWidth="413.0" promptText="Add Link To Bio" />
-                        <Button fx:id="Create" layoutX="238.0" layoutY="610.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="150.0" style="-fx-background-color: #4849e0;" text="Create" textFill="WHITE">
-                           <font>
-                              <Font size="14.0" />
-                           </font>
-                           <cursor>
-                              <Cursor fx:constant="HAND" />
-                           </cursor>
-                        </Button>
+                        <DatePicker layoutX="27.0" layoutY="335.0" prefHeight="26.0" prefWidth="130.0" />
+                        <TextField layoutX="200.0" layoutY="336.0" prefHeight="26.0" prefWidth="74.0" />
+                        <Spinner fx:id="spinner" layoutX="324.0" layoutY="335.0" prefHeight="26.0" prefWidth="73.0" />
                         <Button fx:id="Cancle" layoutX="67.0" layoutY="610.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="150.0" style="-fx-background-color: #FFF; -fx-border-radius: 5PX;" text="Cancel">
                            <font>
                               <Font size="14.0" />
@@ -335,8 +330,14 @@
                               <Cursor fx:constant="HAND" />
                            </cursor>
                         </Button>
-                        <Spinner fx:id="spinner" layoutX="324.0" layoutY="335.0" prefHeight="26.0" prefWidth="73.0" />
-                        <TextField layoutX="200.0" layoutY="336.0" prefHeight="26.0" prefWidth="74.0" />
+                        <Button fx:id="Create" layoutX="238.0" layoutY="610.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="150.0" style="-fx-background-color: #4849e0;" text="Create" textFill="WHITE">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Button>
                         <AnchorPane layoutX="519.0" layoutY="5.0" prefHeight="688.0" prefWidth="430.0">
                            <children>
                               <StackPane layoutX="13.0" layoutY="2.0" prefHeight="673.0" prefWidth="391.0" style="-fx-background-color: #FFF;">
@@ -356,7 +357,6 @@
                            </children>
                         </AnchorPane>
                         <Separator layoutX="479.0" orientation="VERTICAL" prefHeight="700.0" />
-                        <DatePicker layoutX="27.0" layoutY="335.0" prefHeight="26.0" prefWidth="130.0" />
                         <AnchorPane layoutX="14.0" layoutY="29.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="206.0" prefWidth="105.0">
                            <children>
                               <StackPane layoutX="3.0" layoutY="4.0" prefHeight="178.0" prefWidth="97.0" style="-fx-background-color: #FFF; -fx-border-radius: 5px;">

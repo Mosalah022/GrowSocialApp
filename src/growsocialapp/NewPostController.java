@@ -10,6 +10,7 @@ import java.util.ResourceBundle;
 
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
@@ -99,7 +100,7 @@ public class NewPostController extends GrowSocialApp implements Initializable {
         mainContentPane.getChildren().addAll(overlay, postPreviewHolder);
     }
 
-    public void placeButton(MouseEvent event) throws Exception {
+    public void placeButton(ActionEvent event) throws Exception {
         try {
 
             changeScreen(event, "Place.fxml");

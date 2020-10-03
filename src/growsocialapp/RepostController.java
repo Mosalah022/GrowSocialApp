@@ -9,6 +9,7 @@ import java.net.URL;
 import java.util.ResourceBundle;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
@@ -109,7 +110,7 @@ public class RepostController extends GrowSocialApp implements Initializable {
         }
     }
    
-      public void placeButton(MouseEvent event) throws Exception {
+      public void placeButton(ActionEvent event) throws Exception {
         try {
 
             changeScreen(event, "Place.fxml");

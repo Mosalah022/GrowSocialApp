@@ -321,6 +321,23 @@
                <children>
                   <AnchorPane prefHeight="200.0" prefWidth="200.0">
                      <children>
+                        <AnchorPane layoutX="14.0" layoutY="34.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="39.0" prefWidth="447.0" style="-fx-border-color: #D1D1D1; -fx-background-color: #FFF;">
+                           <children>
+                              <StackPane layoutX="10.0" prefHeight="39.0" prefWidth="34.0">
+                                 <children>
+                                    <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@1%20to%207%20Screen/Repost.png" />
+                                       </image>
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                    </ImageView>
+                                 </children>
+                              </StackPane>
+                              <TextField layoutX="45.0" layoutY="2.0" prefHeight="34.0" prefWidth="399.0" promptText="Link To Post" style="-fx-background-color: transparents;" />
+                           </children>
+                        </AnchorPane>
                         <TextFlow layoutX="13.0" layoutY="98.0" prefHeight="318.0" prefWidth="450.0" style="-fx-border-radius: 5px; -fx-background-color: #fff;">
                            <children>
                               <TextArea prefHeight="274.0" prefWidth="450.0" promptText="Write a caption ..." style="-fx-background-color: transparent;" wrapText="true">
@@ -348,15 +365,25 @@
                         </TextFlow>
                         <TextField layoutX="14.0" layoutY="431.0" prefHeight="34.0" prefWidth="278.0" promptText="Add Link To Bio" />
                         <TextField layoutX="14.0" layoutY="489.0" prefHeight="34.0" prefWidth="278.0" promptText="Add Location " />
-                        <StackPane layoutX="292.0" layoutY="431.0" prefHeight="35.0" prefWidth="47.0" />
-                        <Button fx:id="Create" layoutX="217.0" layoutY="609.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="150.0" style="-fx-background-color: #4849e0;" text="Create" textFill="WHITE">
-                           <font>
-                              <Font size="14.0" />
-                           </font>
-                           <cursor>
-                              <Cursor fx:constant="HAND" />
-                           </cursor>
-                        </Button>
+                        <StackPane layoutX="294.0" layoutY="489.0" prefHeight="33.0" prefWidth="42.0" style="-fx-background-color: #fff;">
+                           <children>
+                              <Button mnemonicParsing="false" onAction="#placeButton">
+                                 <graphic>
+                                    <ImageView fitHeight="25.0" fitWidth="39.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@1%20to%207%20Screen/map.loc.png" />
+                                       </image>
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                    </ImageView>
+                                 </graphic>
+                              </Button>
+                           </children>
+                        </StackPane>
+                        <DatePicker layoutX="14.0" layoutY="545.0" prefHeight="26.0" prefWidth="130.0" />
+                        <TextField layoutX="164.0" layoutY="545.0" prefHeight="26.0" prefWidth="74.0" />
+                        <Spinner fx:id="spinner" layoutX="255.0" layoutY="545.0" prefHeight="26.0" prefWidth="73.0" />
                         <Button fx:id="Cancle" layoutX="44.0" layoutY="609.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="150.0" style="-fx-background-color: #FFF; -fx-border-radius: 5PX;" text="Cancel">
                            <font>
                               <Font size="14.0" />
@@ -365,8 +392,14 @@
                               <Cursor fx:constant="HAND" />
                            </cursor>
                         </Button>
-                        <Spinner fx:id="spinner" layoutX="255.0" layoutY="545.0" prefHeight="26.0" prefWidth="73.0" />
-                        <TextField layoutX="164.0" layoutY="545.0" prefHeight="26.0" prefWidth="74.0" />
+                        <Button fx:id="Create" layoutX="217.0" layoutY="609.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="150.0" style="-fx-background-color: #4849e0;" text="Create" textFill="WHITE">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Button>
                         <AnchorPane layoutX="519.0" layoutY="5.0" prefHeight="688.0" prefWidth="430.0" style="-fx-background-color: #FFF;">
                            <children>
                               <Pane layoutY="51.0" prefHeight="421.0" prefWidth="434.0" style="-fx-background-color: #cccccc;">
@@ -423,17 +456,20 @@
                                     </ImageView>
                                  </children>
                               </StackPane>
-                           </children>
-                        </AnchorPane>
-                        <Separator layoutX="479.0" orientation="VERTICAL" prefHeight="700.0" />
-                        <DatePicker layoutX="14.0" layoutY="545.0" prefHeight="26.0" prefWidth="130.0" />
-                        <AnchorPane layoutX="14.0" layoutY="34.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="39.0" prefWidth="447.0" style="-fx-border-color: #D1D1D1; -fx-background-color: #FFF;">
-                           <children>
-                              <StackPane layoutX="10.0" prefHeight="39.0" prefWidth="34.0">
+                              <StackPane layoutX="193.0" layoutY="512.0" prefHeight="26.0" prefWidth="24.0">
                                  <children>
-                                    <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                                    <ImageView fitHeight="25.0" fitWidth="23.0" pickOnBounds="true" preserveRatio="true">
                                        <image>
-                                          <Image url="@1%20to%207%20Screen/Repost.png" />
+                                          <Image url="@1%20to%207%20Screen/CENTER%20BLACK.png" />
+                                       </image>
+                                    </ImageView>
+                                 </children>
+                              </StackPane>
+                              <StackPane layoutX="69.0" layoutY="512.0" prefHeight="26.0" prefWidth="24.0">
+                                 <children>
+                                    <ImageView fitHeight="25.0" fitWidth="23.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@1%20to%207%20Screen/LEFT%20TOP.png" />
                                        </image>
                                        <cursor>
                                           <Cursor fx:constant="HAND" />
@@ -441,21 +477,45 @@
                                     </ImageView>
                                  </children>
                               </StackPane>
-                              <TextField layoutX="45.0" layoutY="2.0" prefHeight="34.0" prefWidth="399.0" promptText="Link To Post" style="-fx-background-color: transparents;" />
+                              <StackPane layoutX="110.0" layoutY="512.0" prefHeight="26.0" prefWidth="24.0">
+                                 <children>
+                                    <ImageView fitHeight="25.0" fitWidth="23.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@1%20to%207%20Screen/RIGHT%20TOP.png" />
+                                       </image>
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                    </ImageView>
+                                 </children>
+                              </StackPane>
+                              <StackPane layoutX="151.0" layoutY="512.0" prefHeight="26.0" prefWidth="24.0">
+                                 <children>
+                                    <ImageView fitHeight="25.0" fitWidth="23.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@1%20to%207%20Screen/CENTER.png" />
+                                       </image>
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                    </ImageView>
+                                 </children>
+                              </StackPane>
+                              <StackPane layoutX="29.0" layoutY="512.0" prefHeight="26.0" prefWidth="24.0">
+                                 <children>
+                                    <ImageView fitHeight="25.0" fitWidth="23.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@1%20to%207%20Screen/LEFT%20BOTTOM.png" />
+                                       </image>
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                    </ImageView>
+                                 </children>
+                              </StackPane>
                            </children>
                         </AnchorPane>
-                        <StackPane layoutX="294.0" layoutY="489.0" prefHeight="33.0" prefWidth="42.0" style="-fx-background-color: #fff;">
-                           <children>
-                              <ImageView fitHeight="25.0" fitWidth="39.0" onMouseClicked="#placeButton" pickOnBounds="true" preserveRatio="true">
-                                 <image>
-                                    <Image url="@1%20to%207%20Screen/map.loc.png" />
-                                 </image>
-                                 <cursor>
-                                    <Cursor fx:constant="HAND" />
-                                 </cursor>
-                              </ImageView>
-                           </children>
-                        </StackPane>
+                        <Separator layoutX="479.0" orientation="VERTICAL" prefHeight="700.0" />
                      </children>
                   </AnchorPane>
                </children>
