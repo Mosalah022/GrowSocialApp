@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<StackPane fx:id="mainPane" maxHeight="-Infinity" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="400.0" prefHeight="103.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="growsocialapp.DateRow">
+   <children>
+      <VBox maxWidth="1.7976931348623157E308" prefHeight="103.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Separator maxWidth="1.7976931348623157E308" VBox.vgrow="ALWAYS">
+               <padding>
+                  <Insets left="30.0" />
+               </padding>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin></Separator>
+            <ScrollPane maxWidth="1.7976931348623157E308" prefHeight="100.0" style="-fx-background-color: transparent;" vbarPolicy="NEVER">
+               <content>
+                  <HBox maxWidth="1.7976931348623157E308" prefHeight="100.0" spacing="20.0">
+                     <children>
+                        <VBox maxWidth="1.7976931348623157E308" prefHeight="100.0">
+                           <children>
+                              <HBox maxWidth="1.7976931348623157E308" prefHeight="100.0" spacing="15.0">
+                                 <children>
+                                    <Label fx:id="dayOfMonthLabel" text="#" textFill="#767676">
+                                       <font>
+                                          <Font name="System Bold" size="20.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="dayOfWeekLabel" alignment="BOTTOM_LEFT" contentDisplay="BOTTOM" prefHeight="30.0" prefWidth="28.0" text="Day" textFill="#767676" HBox.hgrow="ALWAYS">
+                                       <font>
+                                          <Font size="16.0" />
+                                       </font></Label>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </VBox>
+                     </children></HBox>
+               </content>
+            </ScrollPane>
+         </children>
+      </VBox>
+   </children>
+   <padding>
+      <Insets left="5.0" top="5.0" />
+   </padding>
+</StackPane>

@@ -28,7 +28,7 @@
             <Font name="System Bold" size="24.0" />
          </font>
       </Label>
-      <Label layoutX="428.0" layoutY="93.0" prefHeight="54.0" prefWidth="342.0" text="Sign into Instagram to reach the right audience throght smart targeting and advanced scheduling." textFill="#757575" wrapText="true">
+      <Label layoutX="428.0" layoutY="93.0" prefHeight="54.0" prefWidth="342.0" text="Sign into Instagram to reach the right audience through smart targeting and advanced scheduling." textFill="#757575" wrapText="true">
          <font>
             <Font name="Droid Sans" size="15.0" />
          </font>

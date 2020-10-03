@@ -1,0 +1,72 @@
+.tab-pane .tab-header-area .tab-header-background {
+    -fx-opacity: 0;
+}
+
+.tab-pane:top *.tab-header-area {
+    -fx-background-insets: 0 0 20 0;
+    -fx-padding: 0.416667em 0.166667em 0.0em 0.833em; /* 5 2 0 10 */
+}
+
+.tab-pane:focused > .tab-header-area > .headers-region > .tab:selected .focus-indicator {
+    -fx-border-color: #4949DF;
+
+}
+
+.tab-pane
+{
+    -fx-tab-min-width:90px;
+}
+
+.tab{
+    -fx-background-insets: 0 0 20 0;
+}
+.tab-pane .tab
+{
+    -fx-background-color: #ffffff;
+    -fx-text-fill: lightgray;
+
+
+
+}
+
+.tab-pane .tab:selected
+{
+    -fx-background-color: #ffffff;
+    -fx-text-fill: #4949DF;
+}
+
+.tab .tab-label {
+    -fx-alignment: top-center;
+    -fx-text-fill: lightgray;
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+
+    -fx-background-insets: 0 0 20 0;
+}
+
+.tab:selected .tab-label {
+    -fx-alignment: top-center;
+    -fx-text-fill: #4949DF;
+}
+
+.check-box .box {
+
+    -fx-background-color: white;
+    -fx-border-color:grey;
+    -fx-border-radius:20px;
+
+}
+
+.check-box:selected .mark {
+
+    -fx-background-color: white;
+
+}
+
+.check-box:selected .box {
+
+    -fx-background-color: #4949DF;
+    -fx-border-radius:20px;
+    -fx-background-radius:20px;
+
+}
