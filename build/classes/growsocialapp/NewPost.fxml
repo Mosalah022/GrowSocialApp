@@ -179,7 +179,7 @@
                            <children>
                               <MenuButton alignment="CENTER" mnemonicParsing="false" prefHeight="54.0" prefWidth="258.0" style="-fx-background-color: transparent; -fx-border-color: #f2f2f2; -fx-border-width: 1px; -fx-border-radius: 3px;" text="Username" textFill="#000000ab" StackPane.alignment="CENTER">
                                  <items>
-                                    <MenuItem mnemonicParsing="false" text="Add Acount" />
+                                    <MenuItem mnemonicParsing="false" text="Add Account" />
                                  </items>
                                  <StackPane.margin>
                                     <Insets />
