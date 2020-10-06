@@ -180,7 +180,7 @@
                            <children>
                               <MenuButton alignment="CENTER" mnemonicParsing="false" prefHeight="54.0" prefWidth="258.0" style="-fx-background-color: transparent; -fx-border-color: #f2f2f2; -fx-border-width: 1px; -fx-border-radius: 3px;" text="Username" textFill="#000000ab" StackPane.alignment="CENTER">
                                  <items>
-                                    <MenuItem mnemonicParsing="false" text="Add Acount" />
+                                    <MenuItem mnemonicParsing="false" text="Add Account" />
                                  </items>
                                  <StackPane.margin>
                                     <Insets />
@@ -425,11 +425,11 @@
                                           </ImageView>
                                        </children>
                                     </StackPane>
-                                    <StackPane layoutX="386.0" layoutY="14.0" prefHeight="39.0" prefWidth="34.0">
+                                    <StackPane layoutX="386.0" layoutY="20.0" prefHeight="39.0" prefWidth="31.0" style="-fx-background-color: gray;">
                                        <children>
                                           <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
                                              <image>
-                                                <Image url="@1%20to%207%20Screen/bin.png" />
+                                                <Image url="@1%20to%207%20Screen/bin%20icon%20wht.png" />
                                              </image>
                                              <cursor>
                                                 <Cursor fx:constant="HAND" />

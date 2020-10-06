@@ -17,6 +17,8 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.StackPane?>
 <?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
 <?import javafx.scene.text.Font?>
 
 <AnchorPane fx:id="mainPane" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="827.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="growsocialapp.StoryController">
@@ -177,7 +179,7 @@
                            <children>
                               <MenuButton alignment="CENTER" mnemonicParsing="false" prefHeight="54.0" prefWidth="258.0" style="-fx-background-color: transparent; -fx-border-color: #f2f2f2; -fx-border-width: 1px; -fx-border-radius: 3px;" text="Username" textFill="#000000ab" StackPane.alignment="CENTER">
                                  <items>
-                                    <MenuItem mnemonicParsing="false" text="Add Acount" />
+                                    <MenuItem mnemonicParsing="false" text="Add Account" />
                                  </items>
                                  <StackPane.margin>
                                     <Insets />
@@ -359,16 +361,33 @@
                         <Separator layoutX="479.0" orientation="VERTICAL" prefHeight="700.0" />
                         <AnchorPane layoutX="14.0" layoutY="29.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="206.0" prefWidth="105.0">
                            <children>
-                              <StackPane layoutX="3.0" layoutY="4.0" prefHeight="178.0" prefWidth="97.0" style="-fx-background-color: #FFF; -fx-border-radius: 5px;">
+                              <StackPane layoutX="3.0" layoutY="6.0" prefHeight="142.0" prefWidth="104.0" style="-fx-background-color: #FFF; -fx-border-radius: 5px;">
                                  <children>
-                                    <Label prefHeight="44.0" prefWidth="54.0" text="Select image" textFill="#5e5d62" translateX="10.0" translateY="40.0" wrapText="true" />
-                                    <ImageView fitHeight="29.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true">
+                                    <ImageView fitHeight="186.0" fitWidth="120.0" pickOnBounds="true" preserveRatio="true">
                                        <image>
-                                          <Image url="@1%20to%207%20Screen/upload.png" />
+                                          <Image url="@1%20to%207%20Screen/login_bg.png" />
                                        </image>
                                        <cursor>
                                           <Cursor fx:constant="HAND" />
                                        </cursor>
+                                    </ImageView>
+                                    <Label prefHeight="33.0" prefWidth="25.0" text="2" translateX="-40.0" translateY="-70.0" wrapText="true">
+                                       <textFill>
+                                          <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+                                             <stops>
+                                                <Stop color="WHITE" />
+                                                <Stop color="WHITE" offset="1.0" />
+                                             </stops>
+                                          </RadialGradient>
+                                       </textFill>
+                                       <font>
+                                          <Font size="22.0" />
+                                       </font>
+                                    </Label>
+                                    <ImageView fitHeight="28.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true" translateX="40.0" translateY="-70.0">
+                                       <image>
+                                          <Image url="@1%20to%207%20Screen/bin%20icon%20wht.png" />
+                                       </image>
                                     </ImageView>
                                  </children>
                                  <cursor>
@@ -377,7 +396,7 @@
                               </StackPane>
                            </children>
                         </AnchorPane>
-                        <AnchorPane layoutX="132.0" layoutY="29.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="206.0" prefWidth="105.0">
+                        <AnchorPane layoutX="147.0" layoutY="29.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="206.0" prefWidth="105.0">
                            <children>
                               <StackPane layoutX="3.0" layoutY="4.0" prefHeight="178.0" prefWidth="97.0" style="-fx-background-color: #FFF; -fx-border-radius: 5px;">
                                  <children>
